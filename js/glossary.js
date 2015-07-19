@@ -31,6 +31,7 @@
       return false;
     }
   });
+  document.getElementById("term__text").focus();
 });
   jQuery(document).on('change', '#term__text' ,function (event) {
         
