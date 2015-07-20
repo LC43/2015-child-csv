@@ -29,7 +29,7 @@ function prefix_ajax_get_terms(){
 	if (($handle = fopen($uploaddir['baseurl']."/glossario.csv", "r")) !== FALSE) {
     	 	while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
     			if( mb_strtolower($data[0]) === mb_strtolower($term_text)) {
-    	  			$solution = $dta[1];
+    	  			$solution = $data[1];
     			} 
     		}
     		fclose($handle);
